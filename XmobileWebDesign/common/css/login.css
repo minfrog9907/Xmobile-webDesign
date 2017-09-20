@@ -1,18 +1,14 @@
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color: #73F1E2;
-	font-size: 150%;
 }
 ::-moz-placeholder { /* Firefox 19+ */
 	color: #73F1E2;
-	font-size: 150%;
 }
 :-ms-input-placeholder { /* IE 10+ */
 	color: #73F1E2;
-	font-size: 150%;
 }
 :-moz-placeholder { /* Firefox 18- */
 	color: #73F1E2;
-	font-size: 150%;
 }
 
 #login_page {
@@ -21,11 +17,12 @@
 }
 
 .login_logo{
-	height: 50%;
+	height: 40%;
 	position: relative;
 }
 
 .login_logo img{
+	height: 50%;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -37,24 +34,59 @@
 
 #login_form {
 	width: 100%;
-	height: 50%;
+	height: 60%;
+	padding: 5% 0 0 0;
+	box-sizing: border-box;
 	background-color: #262626;
 	position: relative;
 }
 
 #login_form input{
+	padding: 5% 0 3% 0;
+	font-size: 100%;
 	background-color: #262626;
-	padding: 5%;
-	font-size: 120%;
-	border-bottom: 1px solid #73F1E2;
+	border-bottom: 3px solid #1B1B1B;
 	width: 80%;
+	font-size: 150%;
+}
+
+#login_form input:nth-child(2n){
+	margin-top: 5%;
 }
 
 .login_submit{
 	width: 100%;
-	padding: 3% 0;
-	font-size: 150%;
+	padding: 5% 0;
+	font-size: 180%;
+	font-weight: bold;
 	background-color: #1B1B1B;
 	position: absolute;
 	left: 0; 	bottom: 0;
+}
+
+@media screen and (max-height : 500px) {
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: #73F1E2;
+		font-size: 50%;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+		color: #73F1E2;
+		font-size: 50%;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+		color: #73F1E2;
+		font-size: 50%;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		color: #73F1E2;
+		font-size: 50%;
+	}
+	#login_form input{
+		font-size: 50%;
+	}
+
+	.login_submit{
+		font-size: 80%;
+	}
+
 }
