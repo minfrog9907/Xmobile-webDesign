@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <title>messenger</title>
-        <link href="../common/css/base.css" rel="stylesheet">
-        <link href="../common/css/baseHeader.css" rel="stylesheet">
-        <link href="../common/css/messenger.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Messanger</title>
+        <link rel="stylesheet" type="text/css" href="common/css/style.css">
+        <script src="common/script/jquery-1.12.3.js"></script>
+        <script src="common/script/script.js"></script>
     </head>
     <body>
-        <header class="box">
-            <section id="header_section" class="wrap">
-                <article id="header_left">
-                    <img src="../common/images/DarkTheme/message_logo.png" alt="no image">
-                    <span>메신저</span>
-                </article>
-                <article id="header_right">
-                    <button class="settingBtn"><img src="../common/images/DarkTheme/settings.png" alt="no image"></button>
-                </article>
+        <div id="wrap">
+            <header id="messenger_header">
+                <div id="header_status">
+                    <div id="header_icon">
+                        <img src="common/images/DarkTheme/message_logo.png">
+                    </div>
+                    <div id="header_title">
+                        메신저
+                    </div>
+                    <div id="header_setting">
+                        <img src="common/images/DarkTheme/settings.png">
+                    </div>
+                </div>
+                <div id="header_tab">
+                        <ul>
+                            <li id="goFriend">
+                                <img src="common/images/DarkTheme/avatar_light.png">
+                            </li>
+                            <li id="goChat">
+                                <img src="common/images/DarkTheme/message_logo.png">
+                            </li>
+                        </ul>
+                    </div>
+            </header>
+            <section id="messenger_content">
+                <ul id="friends_list">
+                    <li id="friend">
+                        <div id="avatar">
+                            <img src="common/images/DarkTheme/avatar_circle.png">
+                        </div>
+                        <div id="name">
+                            홍길동 사장님
+                        </div>
+                        <ul id="message_menu">
+                            <li id="menu_icon">
+                                <img src="common/images/DarkTheme/message_logo.png">
+                            </li>
+                            <li id="menu_text">
+                                메세지 보내기
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
-        </header>
+        </div>
     </body>
 </html>

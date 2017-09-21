@@ -1,0 +1,172 @@
+#wrap {
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+
+#main_header {
+    position:relative;
+    width:100%;
+    height:10%;
+    background-color:#1b1b1b;
+    text-align:center;
+}
+
+#empty_space {
+    position:relative;
+    width:15%;
+    height:100%;
+    float:left;
+}
+
+#header_title {
+    position:relative;
+    width:70%;
+    height:100%;
+    float:left;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    font-size:3em;
+}
+
+#bookmark {
+    position:relative;
+    width:15%;
+    height:100%;
+    float:right;
+    display:flex;
+    align-items:center;
+}
+
+#main_content {
+    position:relative;
+    width:100%;
+    height:90%;
+    float:left;
+}
+
+#top_container {
+    position:relative;
+    width:100%;
+    height:45%;
+    float:left;
+    margin-bottom:5%;
+}
+
+#progress_container {
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+#container {
+    position:relative;
+    width:80%;
+    height:80%;
+}
+
+#history_container {
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+#history_icon {
+    position:relative;
+    float:left;
+    width:30%;
+    height:100%;
+    text-align:center;
+    display:flex;
+    align-items:center;
+}
+
+#history_icon img {
+    width:50%;
+}
+
+#history_container li {
+    position:relative;
+    width:100%;
+    height:20%;
+}
+
+#history_container ul {
+    position:relative;
+    width:100%;
+    height:90%;
+}
+
+#history_title {
+    position:relative;
+    width:70%;
+    height:100%;
+    float:left;
+    font-size:1.2em;
+    display:flex;
+    align-items:center;
+}
+#main_content h1 {
+    text-align:center;
+    font-size:2em;
+}
+
+#bottom_container {
+    width:90%;
+    height:45%;
+    float:left;
+    margin-left:5%;
+    background-image: url('../images/border.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+
+#icon_container {
+    width:45%;
+    height:45%;
+    text-align:center;
+    float:left;
+    
+}
+
+#icon_btn {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+#icon {
+    width:100%;
+    height:80%;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+}
+
+#icon_title {
+    width:100%;
+    height:20%;
+}
+
+.first {
+    margin-right:5%;
+    margin-bottom:5%;
+}
+
+.second {
+    margin-left:5%;
+    margin-bottom:5%;
+}
+
+.third {
+    margin-right:5%;
+    margin-top:5%;
+}
+
+.fourth {
+    margin-left:5%;
+    margin-top:5%;
+}
