@@ -11,6 +11,47 @@
     <script src="../common/script/fileExplorerBase.js"></script>
 </head>
 <body>
+    <div id="fileExplorer_menu">
+        <div id="menu_container">
+            <table id="icon_container">
+                <tr class="menu_icon">
+                    <td>
+                        <img src="../common/images/DarkTheme/all.png">
+                    </td>
+                    <td>
+                        <img src="../common/images/DarkTheme/tag.png">
+                    </td>
+                    <td>
+                        <img src="../common/images/DarkTheme/history.png">
+                    </td>
+                </tr>
+                <tr class="icon_name">
+                    <td>전체 선택</td>
+                    <td>태그 수정</td>
+                    <td>로그</td>
+                </tr>
+                <tr class="menu_icon">
+                    <td>
+                        <img src="../common/images/DarkTheme/all.png">
+                    </td>
+                    <td>
+                        <img src="../common/images/DarkTheme/tag.png">
+                    </td>
+                    <td>
+                        <img src="../common/images/DarkTheme/history.png">
+                    </td>
+                </tr>
+                <tr class="icon_name">
+                    <td>전체 선택</td>
+                    <td>태그 수정</td>
+                    <td>로그</td>
+                </tr>
+            </table>
+            <div id="trash_btn">
+                <img src="../common/images/DarkTheme/trash.png">
+            </div>
+        </div>
+    </div>
     <div id="wrap">
         <header>
             <div id="header_left">
@@ -23,30 +64,65 @@
                 <img src="../common/images/DarkTheme/message_logo.png">
             </div>
         </header>
-        <div id="search_container">
-            <div id="search_form">
-                <div id="search_icon">
-                    <img src="../common/images/DarkTheme/search.png">
-                </div>
-                <input type="text" id="search_area">
-                <div id="search_arrow">
-                    <img src="../common/images/DarkTheme/arrow_light.png">
-                </div>
-            </div>
-        </div>
-        <div id="align_setting">
-            <div id="first_align">
-                <select name="first">
-                    <option value="text">이름순</option>
-                </select>
-            </div>
-            <div id="secont_align">
-                <select name="second">
-                    <option value="text">내림차순</option>
-                </select>
-            </div>
-        </div>
         <section>
+            <div id="search_container">
+                <div id="search_form">
+                    <div id="search_icon">
+                        <img src="../common/images/DarkTheme/search.png">
+                    </div>
+                    <input type="text" id="search_area">
+                    <div id="search_arrow">
+                        <img src="../common/images/DarkTheme/arrow_light.png">
+                    </div>
+                </div>
+            </div>
+            <div id="search_menu">
+                <select name="align_setting" class="setting_align">
+                    <option value="align_down">내림차순</option>
+                </select>
+                <select name="align_setting" class="setting_align">
+                    <option value="align_name">이름순</option>
+                </select>
+            </div>
+            <div id="search_double">
+                <img src="../common/images/DarkTheme/double_arrow.png">
+            </div>
+            <div id="file_explorer">
+                <ul>
+                    <li class="node">
+                        <div class="super_node">
+                            <div class="node_check_box">
+                                <input type="checkbox" value="none" name="check">
+                            </div>
+                            <div class="node_icon">
+                                <img src="../common/images/DarkTheme/folder_light.png">
+                            </div>
+                            <div class="node_name">
+                                PLAYERUNKNOWN'S BATTLEGROUND
+                            </div>
+                            <div class="node_menu">
+                                <img src="../common/images/DarkTheme/arrow_light.png">
+                            </div>
+                        </div>
+                        <ul class="sub_directory">
+                            <li class="sub_node">
+                                <div class="node_check_box">
+                                    <input type="checkbox" value="none" name="check">
+                                </div>
+                                <div class="node_icon">
+                                    <img src="../common/images/DarkTheme/folder_light.png">
+                                </div>
+                                <div class="node_name">
+                                    Grand Theft Auto V
+                                </div>
+                                <div class="node_menu">
+                                    <img src="../common/images/DarkTheme/arrow_light.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
     </div>
 </body>
