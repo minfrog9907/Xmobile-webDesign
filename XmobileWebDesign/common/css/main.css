@@ -73,7 +73,7 @@
     float:left;
 }
 
-#history_icon {
+.history_icon {
     position:relative;
     float:left;
     width:30%;
@@ -83,7 +83,7 @@
     align-items:center;
 }
 
-#history_icon img {
+.history_icon img {
     width:50%;
 }
 
@@ -99,7 +99,7 @@
     height:90%;
 }
 
-#history_title {
+.history_title {
     position:relative;
     width:70%;
     height:100%;
@@ -124,7 +124,7 @@
     background-size:contain;
 }
 
-#icon_container {
+.icon_container {
     width:45%;
     height:45%;
     text-align:center;
@@ -132,13 +132,13 @@
     
 }
 
-#icon_btn {
+.icon_btn {
     position:relative;
     width:100%;
     height:100%;
 }
 
-#icon {
+.icon {
     width:100%;
     height:80%;
     overflow:hidden;
@@ -146,27 +146,27 @@
     align-items:center;
 }
 
-#icon_title {
+.icon_title {
     width:100%;
     height:20%;
 }
 
-.first {
+#first {
     margin-right:5%;
     margin-bottom:5%;
 }
 
-.second {
+#second {
     margin-left:5%;
     margin-bottom:5%;
 }
 
-.third {
+#third {
     margin-right:5%;
     margin-top:5%;
 }
 
-.fourth {
+#fourth {
     margin-left:5%;
     margin-top:5%;
 }

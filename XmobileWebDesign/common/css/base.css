@@ -27,15 +27,6 @@ a{
 	text-decoration: none;
 }
 
-.box {
-	width: 100%;
-    float: left;
-}
-
-.wrap {
-	width: 80%;
-}
-
 #wrap {
     position:absolute;
     width:100%;

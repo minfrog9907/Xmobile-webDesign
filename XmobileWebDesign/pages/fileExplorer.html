@@ -10,68 +10,45 @@
     <script src="../common/script/jquery-3.2.1.min.js"></script>
     <script src="../common/script/fileExplorerBase.js"></script>
 </head>
-
 <body>
-    <header class="box">
-        <section id="header_section" class="wrap">
-            <article id="header_left">
-                <img src="../common/images/DarkTheme/folder.png" alt="no image">
-                <span>파일 매니저</span>
-            </article>
-            <article id="header_right">
-                <button class="moveMessenger"><img src="../common/images/DarkTheme/message_logo.png" alt="no image"></button>
-                <button class="settingBtn hideBtn"><img src="../common/images/DarkTheme/settings.png" alt="no image"></button>
-            </article>
-        </section>
-    </header>
-
-    <section id="main" class="box">
-        <section id="main_section" class="wrap">
-            <article class="searchFile">
-                <form class="searchForm">
-                    <div class="searchImg">
-                        <img src="../common/images/DarkTheme/search.png" alt="no image">
-                    </div>
-                    <input type="text" name="searchValue" class="searchInput">
-                    <button type="button" class="showRelatedQuery">
-                    <img src="../common/images/DarkTheme/arrow_light.png" alt="no image"></button>
-                </form>
-            </article>
-            <article class="searchBefore">
-                <div class="SBItem" data-value="빠밤">
-                    <p>빠밤</p>
-                    <button class="SBDelete">
-                    <img src="../common/images/DarkTheme/plus_light.png" alt="alt">
-                  </button>
+    <div id="wrap">
+        <header>
+            <div id="header_left">
+                <img src="../common/images/DarkTheme/folder.png">
+            </div>
+            <div id="header_title">
+                파일 매니저
+            </div>
+            <div id="header_right">
+                <img src="../common/images/DarkTheme/message_logo.png">
+            </div>
+        </header>
+        <div id="search_container">
+            <div id="search_form">
+                <div id="search_icon">
+                    <img src="../common/images/DarkTheme/search.png">
                 </div>
-            </article>
-            <article class="fileList">
-                <div class="searchOption">
-                    <form class="searchOptionForm">
-                        <select name="asdf">
-                           <option value="text">이름순</option>
-                       </select>
-                        <select name="qwer">
-                           <option value="test">내림차순</option>
-                       </select>
-                    </form>
-                    <button type="button" class="SOBtn">
-                       <img src="../common/images/DarkTheme/double_arrow.png" alt="no image">
-                   </button>
+                <input type="text" id="search_area">
+                <div id="search_arrow">
+                    <img src="../common/images/DarkTheme/arrow_light.png">
                 </div>
-                <ul>
-                    <li>
-                        <div class="folderItem">
-                            <img src="../common/images/DarkTheme/folder.png" alt="no image">
-                            <span>내 핸드폰</span>
-                            <img src="../common/images/DarkTheme/arrow_light.png" alt="no image">
-                        </div>
-
-                    </li>
-                </ul>
-            </article>
+            </div>
+        </div>
+        <div id="align_setting">
+            <div id="first_align">
+                <select name="first">
+                    <option value="text">이름순</option>
+                </select>
+            </div>
+            <div id="secont_align">
+                <select name="second">
+                    <option value="text">내림차순</option>
+                </select>
+            </div>
+        </div>
+        <section>
         </section>
-    </section>
+    </div>
 </body>
 
 </html>
