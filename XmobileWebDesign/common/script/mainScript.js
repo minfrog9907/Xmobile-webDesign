@@ -1,27 +1,55 @@
-var bar = new ProgressBar.Circle(container, {
-   color: '#73F1E2',
-    strokeWidth: 4,
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    text: {
-        autoStyleContainer: false
-    },
-    from: { color: '#73F1E2', width:1 },
-    to: { color: '#73F1E2', width:4 },
-    step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-        circle.path.setAttribute('stroke-width', state.width);
-        
-        var vlue = Math.round(circle.value() * 100);
-        if (value === 0) {
-            circle.setText('');
-        } else {
-            circle.setText(value);
-        }
-    }
-});
-//bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-//bar.text.style.fontSize = '2rem';
+var offTime = 61200;
+var interval = null;
 
-bar.animate(1.0);
+window.onload = function(){
+    timeInterval();
+    interval = setInterval(function(){timeInterval()},100);
+    canvasSize();
+    $(".dial").knob();
+    canvasLocation();
+    $(".end_time").text(humanReadable(offTime));
+}
+
+function timeInterval(){
+    var ts = getTime();
+    var percent = Math.trunc((ts/offTime)*100);
+    $(".dial").val(percent).trigger("change");
+    if(offTime <= ts){
+       clearInterval(interval);
+    }
+}
+
+function getTime(){
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    return (((h * 60)*60) + (m*60) + s) - 32400;
+}
+
+function canvasSize(){
+    var width = $("#progress_container").width();
+    $(".dial").data("width",width - 150);
+    $(".dial").data("height",width - 150);
+}
+
+function canvasLocation(){
+ $(".dial").parent("div").css({
+     position:"absolute",
+     top : "40%",
+     left : "50%",
+     transform : "translate(-50%, -50%)"
+ })
+}
+
+function humanReadable(seconds) {
+    var pad = function(x) { 
+        return (x < 10) ? "0"+x : x; 
+    }
+    var option12 = function(x){
+        return (x > 12) ? x-12 : x;
+    }
+    return pad(option12(parseInt(seconds / (60*60))))
+        + ":" +
+        pad(parseInt(seconds / 60 % 60))
+}

@@ -7,7 +7,8 @@
       rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../common/css/base.css">
         <link rel="stylesheet" type="text/css" href="../common/css/main.css">
-        <script src="../common/script/progressbar.js-master/dist/progressbar.js"></script>
+        <script src="../common/script/jquery-3.2.1.min.js"></script>
+        <script src="../common/script/jquery.knob.min.js"></script>
         <script src="../common/script/mainScript.js"></script>
     </head>
     <body>
@@ -25,7 +26,13 @@
                 <div id="top_container">
                     <div id="progress_container">
                         <h1>퇴근</h1>
-                        <div id="container"></div>
+                        <input type="text" class="dial"
+                               data-skin="tron"
+                               data-thickness=".1"
+                               data-rotation=anticlockwise
+                               data-linecap=round
+                               data-displayPrevious=true>
+                        <p class="end_time">05:00</p>
                     </div>
                     <div id="history_container">
                         <h1>히스토리</h1>
